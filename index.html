@@ -35,7 +35,23 @@
       <div class="hero-orbit" aria-label="Decorative rotating engineering visual">
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
-        <div class="core">X</div>
+        <div class="engine-stage">
+          <div class="engine-spin">
+            <svg viewBox="0 0 120 120" class="engine-svg" aria-hidden="true">
+              <rect x="30" y="14" width="60" height="60" rx="10" class="eng-block"></rect>
+              <rect x="40" y="4" width="16" height="28" rx="4" class="eng-cyl"></rect>
+              <rect x="64" y="4" width="16" height="28" rx="4" class="eng-cyl"></rect>
+              <rect x="41" y="8" width="14" height="14" rx="3" class="eng-piston p1"></rect>
+              <rect x="65" y="8" width="14" height="14" rx="3" class="eng-piston p2"></rect>
+              <line x1="48" y1="22" x2="60" y2="60" class="eng-rod r1"></line>
+              <line x1="72" y1="22" x2="60" y2="60" class="eng-rod r2"></line>
+              <rect x="24" y="74" width="72" height="30" rx="10" class="eng-crankcase"></rect>
+              <circle cx="60" cy="102" r="17" class="eng-flywheel"></circle>
+              <circle cx="60" cy="102" r="17" class="eng-flywheel-dash"></circle>
+              <circle cx="60" cy="60" r="5" class="eng-hub"></circle>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -79,7 +95,6 @@
     <div class="footer-links"><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy</a></div>
     <p class="copyright">© <span id="year"></span> ENGINE-X</p>
   </footer>
-  <script src="data/items.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
