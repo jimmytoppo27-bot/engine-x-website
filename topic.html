@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGINE-X | Topic Explorer</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="topic.css">
+</head>
+<body class="topic-body">
+  <header class="site-header">
+    <a class="brand" href="../index.html">✦ ENGINE-X</a>
+    <a class="btn secondary back-btn" href="../index.html">← Back</a>
+  </header>
+
+  <main class="topic-main">
+    <div class="topic-heading">
+      <span class="topic-icon" id="topicIcon">⚙️</span>
+      <h1 id="topicTitle">Loading…</h1>
+    </div>
+
+    <div class="viewer">
+      <button class="panel layers-toggle" id="layersToggle">Layers ▾</button>
+      <div class="panel layers-panel" id="layersPanel"></div>
+
+      <div class="panel lives-panel">
+        <p class="lives-label">WHERE IT LIVES</p>
+        <p id="livesText">—</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage-glow"></div>
+        <div class="stack-spin" id="stackSpin"></div>
+      </div>
+
+      <div class="bottom-bar">
+        <button class="btn secondary" id="controlsBtn">⏸ Controls</button>
+      </div>
+
+      <div class="tab-bar">
+        <button class="tab active" data-tab="parts">☰ Parts</button>
+        <button class="tab" data-tab="details">ⓘ Details</button>
+      </div>
+      <div class="tab-panel" id="partsPanel"></div>
+      <div class="tab-panel hidden" id="detailsPanel"></div>
+    </div>
+  </main>
+
+  <script src="topic-data.js"></script>
+  <script src="topic.js"></script>
+</body>
+</html>
